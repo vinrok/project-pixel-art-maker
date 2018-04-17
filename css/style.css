@@ -1,0 +1,129 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;  
+  background-repeat: no-repeat;
+  text-align: center; 
+   -webkit-animation: kaleidoscope 6s ease infinite;
+}
+
+@-webkit-keyframes kaleidoscope {
+  0%, 100% {
+     background: -webkit-linear-gradient(-75deg, yellow, red 60%, rgb(0,255,555) 69%, blue 85%);
+        }
+        25% {
+     background: -webkit-linear-gradient(-75deg, blue, yellow 60%, red 69%, rgb(0,255,555) 85%);
+        }
+        50% {
+     background: -webkit-linear-gradient(-75deg, rgb(0,255,555), blue 60%, yellow 69%, red 85%);
+        }
+        75% {
+    background: -webkit-linear-gradient(-75deg, red, rgb(0,255,555) 60%, blue 69%, yellow 85%);
+        }
+    }
+
+/*       Title  */
+h1 {
+    text-shadow: 4px 5px 4px #abb;
+  border: 3px solid grey ;
+  width: auto;
+    height: auto;  
+    box-shadow: 10px 10px 10px yellow;
+    font-family: Tangerine;
+    font-size: 80px;
+    margin: 0.2em;
+}
+
+/*      Grid size          */
+h2 {
+  font-family: Russo One;
+  padding: 0.5em;
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+/*  form begin  */
+form#sizePicker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input[type=number] {
+    width: 6em;
+    transition: box-shadow 0.5s;
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 8px 5px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+input[type=number]:hover{
+    box-shadow: 2px 2px 10px 0px rgba(0, 1, 0, 0.3);
+}
+
+input[type=submit], input[type=reset], [id|=btn], [class|=btn] {
+    display: inline-block;
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+    box-shadow: 8px 5px 20px 0px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    background-color: yellow; 
+  border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: 'Russ One', cursive;
+    color: black;
+}
+
+input[type=submit]:hover, input[type=reset]:hover, [id|=btn]:hover, [class|=btn]:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+/*     form end     */
+
+table,
+tr,
+td {
+    border: 1px solid black;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+    box-shadow: 0px 0px 20px 2px black;
+}
+
+tr {
+    height: 2em;
+}
+
+td {
+    width: 2em;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    z-index: 1;
+    box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.3);
+    background: #a0f;
+  
+}
